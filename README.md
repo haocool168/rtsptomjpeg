@@ -40,5 +40,8 @@ docker run -d -p 5589:5589 --name mjpeg-server rtsp-mjpeg-stream
 
 http://<服务器IP>:5589/video_feed
 
+blinker app 添加视频video模块
+
+![bt1.png](https://github.com/haocool168/rtsptomjpeg/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260120184729_333_108.jpg)
 
 
