@@ -5,7 +5,8 @@ import threading
 import time
 
 app = Flask(__name__)
-rtsp_url = "rtsp://admin:5490142hu@192.168.31.99:554/stream2"
+# 
+rtsp_url = "rtsp://admin:admin@192.168.31.99:554/stream2"
 
 frame_lock = threading.Lock()
 latest_frame = None
@@ -48,3 +49,4 @@ def video_feed():
 if __name__ == "__main__":
     threading.Thread(target=rtsp_worker, daemon=True).start()
     app.run(host='0.0.0.0', port=5589, threaded=True)
+
